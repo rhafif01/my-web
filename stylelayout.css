@@ -1,0 +1,191 @@
+/*Rhafif Yogiantoro (24.12.3287)*/
+
+/* style element */
+* {
+    box-sizing: border-box;
+}
+
+/* style the body */
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* header/blog title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: yellow;
+    color: black;
+}
+
+.header h1 {
+    font-size: 50px;
+    color: red;
+}
+
+/* style the top navigation bar */
+.topnav{
+    overflow: hidden;
+    background-color: grey;
+}
+
+/* style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* change color on hover */
+.topnav a :hover {
+    background-color: #ddd;
+    color: black;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+
+}
+
+/* change the link color on hover */
+li a:hover {
+    background-color: #c200c2;
+    color: white;
+
+}
+
+/* Create two unequal columns that floats next to each other */
+/* left column*/
+
+.leftcolumn {
+    float: left;
+    width: 25%;
+    padding-right: 10px;
+}
+/*middlecolumn*/
+    
+.middlecolumn {
+    float: left;
+    width: 50%;
+}
+    
+    /* Right column */
+    
+.rightcolumn {
+    float: right;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+    text-align: center;
+}
+.p {
+    text-align: left
+}
+    
+/* Fake image */
+    
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+
+
+/*image gallery*/
+
+.gallery {
+    margin: 10px 10px 10px 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 30%;
+}
+.gallery:hover {
+
+    border: 1px solid #777;
+}
+    
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+    .desc {
+    padding: 20px;
+    text-align: center;
+}
+    
+/* Style class kotak */
+    
+.kotak {
+    width: 100%;
+    padding: 10px;
+    border: 5px solid gray;
+    border-style: dashed;
+    border-color: purple;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+/* Responsive layout when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 800px) {
+.leftcolumn,
+.rightcolumn,
+.kotak {
+    width: 100%;
+    padding: 0;
+    }
+}
+
+/* Responsive layout when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 400px) {
+.topnav a {
+        float: none;
+        width: 100%;
+    }
+}
